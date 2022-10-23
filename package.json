@@ -1,0 +1,43 @@
+{
+  "name": "rental",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.11",
+    "@chakra-ui/react": "^2.3.6",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@fontsource/open-sans": "^4.5.13",
+    "@fontsource/raleway": "^4.5.11",
+    "firebase": "^9.12.1",
+    "formik": "^2.2.9",
+    "framer-motion": "^6.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.10.0",
+    "next": "12.3.1",
+    "next-redux-wrapper": "^8.0.0",
+    "react": "18.2.0",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-redux": "^8.0.4",
+    "react-slick": "^0.29.0",
+    "react-thunk": "^1.0.0",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "request": "^2.88.2",
+    "select-philippines-address": "^1.0.6",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.1",
+    "redux-logger": "^3.0.6"
+  }
+}
