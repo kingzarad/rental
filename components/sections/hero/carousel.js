@@ -39,7 +39,7 @@ export function HeroCarousel() {
         "",
       image:
         'https://images.unsplash.com/photo-1572454181157-0b40dd7667fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=901&q=80',
-     
+
     },
     {
       href: '#',
@@ -48,7 +48,7 @@ export function HeroCarousel() {
         "",
       image:
         'https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-    
+
     },
   ];
 
@@ -95,10 +95,10 @@ export function HeroCarousel() {
         onClick={() => slider?.slickNext()}>
         <BiRightArrowAlt size="30px" />
       </IconButton>
-      {/* Slider */}
+
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((card, index) => (
-          <Link href={card.href}>
+          <Link key={index} href={card.href}>
             <Box
               key={index}
               height={'100vh'}
@@ -107,7 +107,7 @@ export function HeroCarousel() {
               backgroundRepeat="no-repeat"
               backgroundSize="cover"
               objectFit="cover"
-              
+
               backgroundImage={`url(${card.image})`}>
               {/* This is the block you need to change, to customize the caption */}
               <Container size="container.lg" height="600px" position="relative">

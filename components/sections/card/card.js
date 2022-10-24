@@ -87,7 +87,7 @@ export function Card() {
                             fontWeight="semibold"
                             as="h4"
                             lineHeight="tight"
-                            isTruncated>
+                            >
                             {data.name}
                         </Box>
                         <Tooltip
